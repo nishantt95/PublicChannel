@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView11"
+        android:layout_gravity="center_horizontal" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/editTextSapId"
+
+            android:ems="10"
+            android:hint="Sap Id"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/GroupTypeBatch"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Select Batch"
+                    android:textStyle="bold"
+                    android:id="@+id/textView4" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B1"
+                    android:textStyle="bold"
+                    android:id="@+id/radioButtonB1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B2"
+                    android:textStyle="bold"
+                    android:id="@+id/radioButtonB2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B3"
+                    android:textStyle="bold"
+                    android:id="@+id/radioButtonB3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B4"
+                    android:textStyle="bold"
+                    android:id="@+id/radioButtonB4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Batches [Include All]"
+                    android:textStyle="bold"
+                    android:id="@+id/radioButtonB0" />
+
+
+            </RadioGroup>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+    </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider"
+        android:id="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Software Engineering"
+        android:id="@+id/textViewSubject"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/progressBarAttendance"
+        android:layout_below="@+id/textViewAttendancePercent"
+        android:layout_alignRight="@+id/textViewProjectedAttendance"
+        android:layout_alignEnd="@+id/textViewProjectedAttendance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classes attended : 7/10"
+        android:padding="5dp"
+        android:textSize="12dp"
+        android:id="@+id/textViewClassesAttended"
+        android:layout_below="@+id/progressBarAttendance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70%"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:id="@+id/textViewAttendancePercent"
+        android:layout_below="@+id/textViewSubject"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Days absent : Oct 15"
+        android:textSize="12dp"
+        android:textColor="#db3236"
+        android:id="@+id/textViewDaysAbsent"
+        android:layout_below="@+id/textViewClassesAttended"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projected Attendance : 85%"
+        android:padding="5dp"
+        android:textSize="12dp"
+        android:id="@+id/textViewProjectedAttendance"
+        android:layout_above="@+id/textViewDaysAbsent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="You can safely miss 5 classes"
+        android:textSize="12dp"
+        android:id="@+id/textViewSuggestion"
+        android:layout_below="@+id/textViewDaysAbsent"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

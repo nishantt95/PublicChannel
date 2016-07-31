@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Timetable"
+            android:id="@+id/textViewSyncTime"
+            />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonMon" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonTue" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonWed" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonThu" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonFri" />
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Reload"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonSat" />
+
+    </TableRow>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewTimetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0.5dp"
+        android:id="@+id/scrollView12"
+        android:layout_gravity="center_horizontal" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#000000"
+                android:id="@+id/trDayType"
+                android:padding="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tvDayType" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12.4dp"
+                    android:text="Click on any day to see the timetable."
+                    android:id="@+id/textViewTime" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#D8311E"
+                    android:gravity="center"
+                    android:id="@+id/tvOnLeaving" />
+
+                </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tvCurrent"
+                    />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="#1D900B"
+                    android:id="@+id/tvOnAttending"
+                    android:textStyle="bold"
+                    />
+
+                </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:background="#D8311E"
+                android:gravity="center"
+                android:id="@+id/trCritical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/tvCritical"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:background="#FD6500"
+                android:id="@+id/trWarning"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/tvWarning"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:background="#1D900B"
+                android:id="@+id/trSafe"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text=""
+                    android:id="@+id/tvSafe"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

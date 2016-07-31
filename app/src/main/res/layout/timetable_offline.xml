@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Timetable Offline Version"
+            android:id="@+id/textViewSyncTime"
+             />
+    </TableRow>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewTimetableOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonMonOff" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonTueOff" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonWedOff" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonThuOff" />
+
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonFriOff" />
+        <Button
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonSatOff" />
+
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:id="@+id/scrollView12"
+        android:layout_gravity="center_horizontal" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12.4dp"
+            android:text="Welcome to the offline feature. Click on any of the day to see your timetable"
+            android:id="@+id/textViewTimeOff" />
+
+    </ScrollView>
+
+</LinearLayout>

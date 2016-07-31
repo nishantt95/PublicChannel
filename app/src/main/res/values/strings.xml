@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Public Channel</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start_here">StartHere</string>
+    <string name="facebook_app_id">158867791144261</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5460498855557190/1875391066</string>
+    <string name="anonymous_hint">Anonymous post will be 100% anonymous and even our system will not keep the track of that person.\n\nBefore publishing it to the audience, your post will go under a review and after the approval it will be published.\n\n<b>SapId </b>is optional and its the sapid of that person to whom you want to dedicate the message and that person will never know that who have sent that post\n\nPlease remember the key which will be generated after posting the content because <b>key</b> is the only way to keep the track of your post.
+        \n\nYou will see a black tick box with the post and it will be visible only when the desired person (whose sapid is entered) will see the post.
+        \n\nSo, its better to enter the sapid and a cool way to know whether the desired person have seen the post or not.
+    </string>
+    <string name="title_activity_attendance__detail">Attendance_Detail</string>
+</resources>

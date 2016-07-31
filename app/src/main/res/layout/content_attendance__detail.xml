@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.work.nishant.publicchannel.Attendance_Detail"
+    tools:showIn="@layout/attendance__detail">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView14" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/trSubRow"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Software Engineering and project management"
+                android:id="@+id/textViewSubjectD"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                 />
+        </TableRow>
+
+        <com.google.android.gms.ads.AdView
+
+            android:id="@+id/adViewAnonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewAttendanceShow"
+                android:layout_centerHorizontal="true" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroupDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Attending"
+                    android:id="@+id/radioButton"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Leaving"
+                    android:id="@+id/radioButton2"
+                    android:checked="false" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content">
+
+            <NumberPicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberPicker"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classes"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/textViewss" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewCurrentAttendance"
+                android:layout_centerHorizontal="true" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

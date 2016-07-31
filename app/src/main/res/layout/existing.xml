@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    </TableRow>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4"
+        android:layout_gravity="center_horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hi there!"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textIsSelectable="true"
+            android:id="@+id/textViewUserName"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmailExisting"
+
+            android:hint="Email Id"
+
+            />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone No"
+            android:ems="10"
+            android:id="@+id/editTextPhoneExisting"
+            android:layout_below="@+id/editTextEmailExisting"
+            android:layout_centerHorizontal="true"
+             />
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password (Min 6)"
+            android:id="@+id/editTextPasswordExisting"
+
+            />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep my phone number private"
+            android:id="@+id/radioButtonExisting"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/buttonExisting"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_below="@+id/editTextPasswordExisting"
+            android:layout_centerHorizontal="true"
+             />
+
+    </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

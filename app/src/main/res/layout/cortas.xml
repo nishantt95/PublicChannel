@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Timetable and Attendance"
+            android:id="@+id/buttonAttendance" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just click on 'Timetable and Attendance' and then you will be asked to enter you sapid, password and captcha. Once logged in successfully you don't have to repeat the same procedure and you can check yout timetable and attendance easily.\n\nFor the very first time it can take a while to load so have patience."
+            android:textSize="12dp"
+            android:textIsSelectable="true"
+            android:textColor="#222426"
+            android:id="@+id/textViewStart" />
+    </TableRow>
+</LinearLayout>

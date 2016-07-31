@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textIsSelectable="true"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:id="@+id/textViewMostName"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Views"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textIsSelectable="true"
+        android:id="@+id/textViewMostViews"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:padding="5dp"
+        android:textSize="12dp"
+        android:textIsSelectable="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textViewMostBranch"
+        android:layout_below="@+id/textViewMostName"
+         />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_Skill"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Update Skill Profile" />
+        <item
+            android:id="@+id/nav_fb"
+            android:icon="@drawable/com_facebook_button_icon"
+            android:title="Connect with Facebook" />
+
+        <item
+            android:id="@+id/nav_Attendance"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Attendance/Timetable" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_developer"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About Developer" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_opensource"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Open source license" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

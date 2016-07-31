@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/attendanceXml"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonLogoutAttendance"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonRefreshAttendance"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timetable"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttontoTimetable"
+            />
+
+    </TableRow>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:id="@+id/textViewNameAttendance" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12dp"
+            android:gravity="right"
+            android:id="@+id/textViewAllAttendance" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16dp"
+            android:padding="2dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/textViewTotalAttendance" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarTotalAttedance" />
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:text=""
+        android:background="?android:attr/listDivider"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+         />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewAttendance" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView10"
+        android:layout_gravity="center_vertical" />
+
+
+
+    </TableRow>
+
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update your skill profile"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:id="@+id/textView3" />
+    </TableRow>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView9"
+        android:layout_gravity="center_horizontal" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/GroupType"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Select type"
+                android:textStyle="bold"
+                android:id="@+id/textView4" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free"
+                android:textStyle="bold"
+                android:textColor="#21A00D"
+                android:id="@+id/radioButtonFree" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="#e15242"
+                android:textStyle="bold"
+                android:id="@+id/radioButtonPaid" />
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/GroupLevel"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Select your experience level"
+                android:textStyle="bold"
+                android:id="@+id/textViewoo" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newbie"
+                android:textColor="#FD6500"
+                android:textStyle="bold"
+                android:id="@+id/radioButtonNewbie" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColor="#21A00D"
+                android:textStyle="bold"
+                android:id="@+id/radioButtonIntermediate" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expert"
+                android:textColor="#e15242"
+                android:textStyle="bold"
+                android:id="@+id/radioButtonExpert" />
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Skills (separated by comma)"
+            android:gravity="center_horizontal"
+            android:id="@+id/PostSkillSet" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Description (Optional)"
+            android:gravity="center_horizontal"
+            android:ems="15"
+            android:id="@+id/PostDescription" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/buttonSkillUpdate" />
+    </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

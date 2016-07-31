@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewSlider"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="188dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_weight="0.60"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="20dp"
+        android:id="@+id/linearLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:id="@+id/textViewName"
+                android:text="Nishant Thapliyal"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewSapId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textIsSelectable="true"
+                android:textSize="12dp"
+                android:text="500029676" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewRollNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textIsSelectable="true"
+                android:textSize="12dp"
+                android:text="R970213035" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textIsSelectable="true"
+                android:textSize="12dp"
+                android:text="B.tech CSE Oil and Gas" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:textIsSelectable="true"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:text="nishantt95@gmail.com" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
